@@ -64,3 +64,4 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+MobileIMSDK4iLib/.DS_Store
