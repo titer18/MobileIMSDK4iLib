@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name             = 'MobileIMSDK4iLib'
   s.version          = '1.0'
-  s.summary          = 'IM网络通讯库'
+  s.summary          = 'IMobileIMSDK4iLib M网络通讯库'
 
   <<-DESC
-  IM网络通讯库。
+  MobileIMSDK4iLib IM网络通讯库。
   DESC
 
-  s.homepage         = 'https://gitee.com/titer/MobileIMSDK4iLib'
+  s.homepage         = 'https://github.com/titer18/MobileIMSDK4iLib'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'titer' => 'zhaohong1991@hotmail.com' }
-  s.source           = { :git => 'https://gitee.com/titer/MobileIMSDK4iLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/titer18/MobileIMSDK4iLib.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
