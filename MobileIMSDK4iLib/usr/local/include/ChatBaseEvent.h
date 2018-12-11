@@ -21,10 +21,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Protocal.h"
 
 @protocol ChatBaseEvent <NSObject>
 
-- (void) onLoginMessage:(int) dwErrorCode;
-- (void) onLinkCloseMessage:(int)dwErrorCode;
+- (void) onLoginMessage:(int) dwErrorCode protocal:(Protocal *)protocal;
+- (void) onLinkCloseMessage:(int)dwErrorCode protocal:(Protocal *)protocal;
 
 @end

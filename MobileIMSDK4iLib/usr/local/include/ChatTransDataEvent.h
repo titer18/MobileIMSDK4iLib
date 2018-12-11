@@ -22,10 +22,11 @@
 
 #import <Foundation/Foundation.h>
 #import "ErrorCode.h"
+#import "Protocal.h"
 
 @protocol ChatTransDataEvent <NSObject>
 
-- (void) onTransBuffer:(NSString*)fingerPrintOfProtocal withUserId:(NSString*)userid andContent:(NSString*)dataContent andTypeu:(int)typeu;
-- (void) onErrorResponse:(int)errorCode withErrorMsg:(NSString*)errorMsg;
+- (void) onTransBuffer:(NSString*)fingerPrintOfProtocal withUserId:(NSString*)userid andContent:(NSString*)dataContent andTypeu:(int)typeu protocal:(Protocal *)protocal;
+- (void) onErrorResponse:(int)errorCode withErrorMsg:(NSString*)errorMsg protocal:(Protocal *)protocal;
 
 @end

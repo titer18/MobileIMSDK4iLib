@@ -21,10 +21,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Protocal.h"
 
 @protocol MessageQoSEvent <NSObject>
 
 - (void) messagesLost:(NSMutableArray*)lostMessages;
-- (void) messagesBeReceived:(NSString*)theFingerPrint;
+- (void) messagesBeReceived:(NSString*)theFingerPrint protocal:(Protocal *)protocal;
 
 @end
