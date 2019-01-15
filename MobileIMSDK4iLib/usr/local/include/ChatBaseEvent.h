@@ -21,7 +21,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Protocal.h"
 
 @protocol ChatBaseEvent <NSObject>
 

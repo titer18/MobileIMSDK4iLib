@@ -27,6 +27,9 @@
 @protocol ChatTransDataEvent <NSObject>
 
 - (void) onTransBuffer:(NSString*)fingerPrintOfProtocal withUserId:(NSString*)userid andContent:(NSString*)dataContent andTypeu:(int)typeu protocal:(Protocal *)protocal;
+
 - (void) onErrorResponse:(int)errorCode withErrorMsg:(NSString*)errorMsg protocal:(Protocal *)protocal;
+
+- (void) onTransOtherBuffer:(NSString*)fingerPrintOfProtocal content:(NSString*)dataContent andTypeu:(int)typeu  protocal:(Protocal *)protocal;
 
 @end
