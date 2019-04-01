@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobileIMSDK4iLib'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'MobileIMSDK4iLib IM网络通讯库'
 
   <<-DESC
@@ -15,7 +15,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MobileIMSDK4iLib/**/*.{h,m}'
-  s.public_header_files = 'MobileIMSDK4iLib/**/*.h'
-  s.vendored_libraries = 'MobileIMSDK4iLib/**/*.a'
 
 end

@@ -30,6 +30,7 @@
 @property (nonatomic, retain)  NSString *from;
 @property (nonatomic, retain)  NSString *to;
 @property (nonatomic, retain)  NSString *fp;
+@property (nonatomic, retain)  NSString *chatId; //服务端需求
 @property (nonatomic, assign)  bool QoS;
 @property (nonatomic, assign)  int typeu;
 
