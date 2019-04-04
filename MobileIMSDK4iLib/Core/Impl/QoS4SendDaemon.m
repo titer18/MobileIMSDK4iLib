@@ -31,7 +31,7 @@
 
 
 static int CHECK_INTERVAL = 5000;
-static int MESSAGES_JUST$NOW_TIME = 3 * 1000;
+static int MESSAGES_JUST$NOW_TIME = 11 * 1000;
 static int QOS_TRY_COUNT = 2;
 
 
