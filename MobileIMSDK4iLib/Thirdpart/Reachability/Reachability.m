@@ -55,7 +55,7 @@
 #import "Reachability.h"
 
 
-NSString *kReachabilityChangedNotification = @"kNetworkReachabilityChangedNotification";
+NSString *kReachabilityChangedNotification = @"kIMSdkNetworkReachabilityChangedNotification";
 
 
 #pragma mark - Supporting functions
