@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MobileIMSDK4iLib'
-  s.version          = '1.5'
+  s.version          = '1.5.1'
   s.summary          = 'MobileIMSDK4iLib IM网络通讯库'
 
   <<-DESC
