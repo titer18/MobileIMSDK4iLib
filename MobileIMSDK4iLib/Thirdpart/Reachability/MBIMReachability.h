@@ -1,5 +1,5 @@
 /*
-     File: Reachability.h
+     File: MBIMReachability.h
  Abstract: Basic demonstration of how to use the SystemConfiguration Reachablity APIs.
   Version: 3.5
  
@@ -57,10 +57,10 @@ typedef enum : NSInteger {
 } NetworkStatus;
 
 
-extern NSString *kReachabilityChangedNotification;
+extern NSString *kMBIMReachabilityChangedNotification;
 
 
-@interface Reachability : NSObject
+@interface MBIMReachability : NSObject
 
 /*!
  * Use to check the reachability of a given host name.

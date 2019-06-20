@@ -24,7 +24,7 @@
 #import "ChatTransDataEvent.h"
 #import "ChatBaseEvent.h"
 #import "MessageQoSEvent.h"
-#import "Reachability.h"
+#import "MBIMReachability.h"
 #import "QoS4SendDaemon.h"
 #import "KeepAliveDaemon.h"
 #import "LocalUDPDataReciever.h"
@@ -40,7 +40,7 @@ static BOOL autoReLogin = YES;
 @interface ClientCoreSDK ()
 
 @property (nonatomic) BOOL _init;
-@property (nonatomic) Reachability *internetReachability;
+@property (nonatomic) MBIMReachability *internetReachability;
 
 @end
 
@@ -94,8 +94,8 @@ static ClientCoreSDK *instance = nil;
         
         if(self.internetReachability == nil)
         {
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
-            self.internetReachability = [Reachability reachabilityForInternetConnection];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kMBIMReachabilityChangedNotification object:nil];
+            self.internetReachability = [MBIMReachability reachabilityForInternetConnection];
         }
         [self.internetReachability startNotifier];
         self.localDeviceNetworkOk = [self internetReachable];
@@ -137,8 +137,8 @@ static ClientCoreSDK *instance = nil;
 
 - (void) reachabilityChanged:(NSNotification *)note
 {
-    Reachability* reachability = [note object];
-    NSParameterAssert([reachability isKindOfClass:[Reachability class]]);
+    MBIMReachability* reachability = [note object];
+    NSParameterAssert([reachability isKindOfClass:[MBIMReachability class]]);
     
     NetworkStatus netStatus = [reachability currentReachabilityStatus];
     BOOL connectionRequired = [reachability connectionRequired];
@@ -182,7 +182,7 @@ static ClientCoreSDK *instance = nil;
 
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kMBIMReachabilityChangedNotification object:nil];
 }
 
 @end
